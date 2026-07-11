@@ -1,0 +1,21 @@
+# Port für den eingebauten Upload-Webserver
+port: 8853
+
+# Öffentliche Adresse, die im Chat-Link angezeigt wird.
+# Leer lassen -> Plugin versucht die öffentliche IP automatisch zu ermitteln (funktioniert nicht
+# immer zuverlässig, z.B. hinter NAT/Portweiterleitung). Am sichersten: hier eure Domain oder
+# öffentliche IP eintragen, z.B. "meinserver.de" oder "203.0.113.5".
+# WICHTIG: Der oben gewählte Port muss extern erreichbar sein (Portweiterleitung/Firewall!).
+public-host: ""
+
+# Wie lange ein /imagemap upload Link gültig ist (Minuten)
+upload-link-expiry-minutes: 15
+
+# Wie lange ein fertig verarbeiteter Code per /imagemap confirm abgeholt werden kann (Minuten)
+job-expiry-minutes: 120
+
+# Maximale Bildgröße in Karten (Breite/Höhe), Schutz vor riesigen Wänden
+max-grid-size: 25
+
+# Maximale Upload-Dateigröße in MB
+max-upload-mb: 20

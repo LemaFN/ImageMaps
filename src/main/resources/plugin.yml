@@ -1,0 +1,20 @@
+name: ImageMapPlugin
+version: '1.0.0'
+main: de.example.imagemap.ImageMapPlugin
+api-version: '1.21'
+author: Claude
+description: Bilder als Wand aus Item-Frame-Maps hochladen, persistiert nach Neustarts.
+
+commands:
+  imagemap:
+    description: Bild-Map Upload verwalten
+    usage: |
+      /imagemap upload - erzeugt einen Upload-Link
+      /imagemap confirm <code> - holt die fertigen Karten ab
+    permission: imagemap.use
+
+permissions:
+  imagemap.use:
+    default: true
+  imagemap.admin:
+    default: op
